@@ -13,12 +13,13 @@
   --sombra-card:0 20px 40px rgba(15,81,50,.12);
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-top:92px}
 body{
   margin:0;overflow-x:hidden;background:var(--fundo);color:var(--tinta);
   font-family:'Nunito Sans',system-ui,-apple-system,sans-serif;
-  -webkit-font-smoothing:antialiased;
+  -webkit-font-smoothing:antialiased;min-height:100vh
 }
+section[id]{scroll-margin-top:94px}
 img,svg{max-width:100%;display:block;height:auto}
 a{color:var(--verde-escuro)}
 a:hover{color:var(--verde)}
@@ -93,7 +94,7 @@ h1,h2,h3,.marca__nome,.num{font-family:'Baloo 2',system-ui,sans-serif;letter-spa
 .secao--clara{background:var(--fundo-alt)}
 .rotulo{font-size:12px;font-weight:800;letter-spacing:.24em;color:var(--verde)}
 .secao--escura .rotulo{color:var(--lima)}
-.titulo-fixo{position:sticky;top:var(--topo);z-index:20;background:var(--fundo);padding:14px 0 12px}
+.titulo-fixo{position:relative;z-index:20;background:var(--fundo);padding:14px 0 12px}
 .secao--escura .titulo-fixo{background:var(--verde-escuro)}
 .secao--clara .titulo-fixo{background:var(--fundo-alt)}
 .titulo-fixo h2{font-size:clamp(28px,4vw,44px);font-weight:700;color:var(--verde-escuro);margin:10px 0 0}
@@ -152,8 +153,8 @@ blockquote{margin:26px 0 0;border-left:4px solid var(--verde);padding:4px 0 4px 
 .atalho span{color:var(--verde)}
 
 /* ---------- rodapé ---------- */
-.botao-flutuante{position:fixed;right:20px;bottom:20px;z-index:100;background:linear-gradient(135deg,#25d366,#1ebc5d);color:#fff;text-decoration:none;font-weight:800;font-size:15px;padding:14px 18px;border-radius:999px;box-shadow:0 16px 28px rgba(37,211,102,.36);transition:transform .2s ease, box-shadow .2s ease;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap}
-.botao-flutuante:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 20px 34px rgba(37,211,102,.42)}
+.botao-flutuante{position:fixed;right:16px;bottom:16px;z-index:100;background:#25d366;color:#fff;text-decoration:none;font-weight:700;font-size:11px;padding:10px 14px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 10px 22px rgba(37,211,102,.28);transition:transform .2s ease, box-shadow .2s ease; border:none;white-space:nowrap;line-height:1}
+.botao-flutuante:hover{transform:translateY(-2px);box-shadow:0 14px 24px rgba(37,211,102,.34)}
 .rodape{background:#0a3a24;color:#cfe6d6}
 .rodape__linha{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;padding:40px 0;font-size:15px;line-height:1.6}
 .rodape .marca__nome{color:#fff}

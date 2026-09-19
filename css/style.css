@@ -67,6 +67,7 @@ h1,h2,h3,.marca__nome,.num{font-family:'Baloo 2',system-ui,sans-serif;letter-spa
              radial-gradient(circle at 70% 20%,#18a349 0,transparent 40%);
 }
 .hero__grade{position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px;align-items:center;padding:72px 0 84px}
+.hero__copy{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;max-width:700px}
 .hero__foto{box-shadow:0 35px 80px rgba(0,0,0,.28);border:8px solid rgba(184,240,122,.35)}
 .selo{display:inline-flex;align-items:center;gap:8px;background:rgba(184,240,122,.16);border:1px solid rgba(184,240,122,.4);color:#cdf3a3;font-size:13px;font-weight:700;padding:7px 14px;border-radius:999px}
 .hero__brand{display:flex;flex-direction:column;line-height:1;margin-bottom:18px;background:none;border:none;padding:0}
@@ -187,6 +188,7 @@ blockquote{margin:26px 0 0;border-left:4px solid var(--verde);padding:4px 0 4px 
   .menu a{font-size:14px}
   .hero__grade{padding:40px 0 52px;gap:30px;grid-template-columns:1fr}
   .hero__grade > div:first-child{display:flex;flex-direction:column;align-items:flex-start}
+  .hero__copy{max-width:100%}
   .hero__marca{margin-bottom:12px}
   .hero h1{font-size:clamp(30px,9vw,40px);max-width:12ch;line-height:0.98}
   .hero__texto{font-size:17px;margin:16px 0 24px;max-width:100%}

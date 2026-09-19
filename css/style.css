@@ -155,7 +155,7 @@ blockquote{margin:26px 0 0;border-left:4px solid var(--verde);padding:4px 0 4px 
 .atalho span{color:var(--verde)}
 
 /* ---------- rodapé ---------- */
-.botao-flutuante{position:fixed;right:18px;bottom:18px;z-index:100;background:linear-gradient(180deg,#32d66b,#1ebc5d);color:#fff;text-decoration:none;font-weight:800;font-size:14px;padding:12px 18px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 12px 24px rgba(37,211,102,.28);transition:transform .2s ease, box-shadow .2s ease, filter .2s ease; border:none;white-space:nowrap;line-height:1;letter-spacing:-.01em;font-family:'Nunito Sans',system-ui,sans-serif}
+.botao-flutuante{position:fixed;right:18px;bottom:18px;z-index:100;background:linear-gradient(180deg,#32d66b,#1ebc5d);color:#fff;text-decoration:none;font-weight:800;font-size:14px;padding:12px 18px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 12px 24px rgba(37,211,102,.28);transition:transform .2s ease, box-shadow .2s ease, filter .2s ease;border:none;white-space:nowrap;line-height:1;letter-spacing:-.01em;font-family:'Nunito Sans',system-ui,sans-serif}
 .botao-flutuante:hover{transform:translateY(-2px);box-shadow:0 16px 28px rgba(37,211,102,.34);filter:brightness(1.02)}
 @media (max-width:640px){
   .botao-flutuante{right:14px;bottom:14px;padding:10px 14px;font-size:13px}

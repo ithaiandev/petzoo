@@ -17,9 +17,11 @@ html{scroll-behavior:smooth;scroll-padding-top:92px}
 body{
   margin:0;overflow-x:hidden;background:var(--fundo);color:var(--tinta);
   font-family:'Nunito Sans',system-ui,-apple-system,sans-serif;
-  -webkit-font-smoothing:antialiased;min-height:100vh
+  -webkit-font-smoothing:antialiased;min-height:100vh;
+  -webkit-tap-highlight-color:transparent
 }
 section[id]{scroll-margin-top:94px}
+main{display:block}
 img,svg{max-width:100%;display:block;height:auto}
 a{color:var(--verde-escuro)}
 a:hover{color:var(--verde)}
@@ -153,8 +155,11 @@ blockquote{margin:26px 0 0;border-left:4px solid var(--verde);padding:4px 0 4px 
 .atalho span{color:var(--verde)}
 
 /* ---------- rodapé ---------- */
-.botao-flutuante{position:fixed;right:16px;bottom:16px;z-index:100;background:#25d366;color:#fff;text-decoration:none;font-weight:700;font-size:11px;padding:10px 14px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 10px 22px rgba(37,211,102,.28);transition:transform .2s ease, box-shadow .2s ease; border:none;white-space:nowrap;line-height:1}
-.botao-flutuante:hover{transform:translateY(-2px);box-shadow:0 14px 24px rgba(37,211,102,.34)}
+.botao-flutuante{position:fixed;right:18px;bottom:18px;z-index:100;background:linear-gradient(180deg,#32d66b,#1ebc5d);color:#fff;text-decoration:none;font-weight:800;font-size:14px;padding:12px 18px;border-radius:999px;display:inline-flex;align-items:center;justify-content:center;box-shadow:0 12px 24px rgba(37,211,102,.28);transition:transform .2s ease, box-shadow .2s ease, filter .2s ease; border:none;white-space:nowrap;line-height:1;letter-spacing:-.01em;font-family:'Nunito Sans',system-ui,sans-serif}
+.botao-flutuante:hover{transform:translateY(-2px);box-shadow:0 16px 28px rgba(37,211,102,.34);filter:brightness(1.02)}
+@media (max-width:640px){
+  .botao-flutuante{right:14px;bottom:14px;padding:10px 14px;font-size:13px}
+}
 .rodape{background:#0a3a24;color:#cfe6d6}
 .rodape__linha{display:flex;flex-wrap:wrap;gap:18px;align-items:center;justify-content:space-between;padding:40px 0;font-size:15px;line-height:1.6}
 .rodape .marca__nome{color:#fff}
